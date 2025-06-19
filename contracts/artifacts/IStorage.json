@@ -49,13 +49,13 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"getSVGPointer()": "c42cad21"
+			"getPointer()": "a32a3ee4"
 		}
 	},
 	"abi": [
 		{
 			"inputs": [],
-			"name": "getSVGPointer",
+			"name": "getPointer",
 			"outputs": [
 				{
 					"internalType": "address",

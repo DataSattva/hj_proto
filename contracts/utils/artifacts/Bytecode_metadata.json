@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_size",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_start",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_end",
+						"type": "uint256"
+					}
+				],
+				"name": "InvalidCodeAtRange",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/utils/Bytecode.sol": "Bytecode"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/utils/Bytecode.sol": {
+			"keccak256": "0x0088e4b682739d435694d1e9586706cd933c17a8d2b471c999308b7e50cd2f7c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://751b131ee7d1b49e97dd5d8f12b19a956fb0e259c18aa9445ec78d6bcf5848e4",
+				"dweb:/ipfs/QmcNooimfYnZh3xvDi6bANzCHuZBGxQybwv3xsVZi4XLM2"
+			]
+		}
+	},
+	"version": 1
+}

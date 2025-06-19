@@ -7,30 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "WriteError",
-				"type": "error"
-			},
-			{
-				"inputs": [],
 				"name": "getPointer",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "svgPointer",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -55,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingSVGStorage.sol": "HashJingSVGStorage"
+			"contracts/HashJingViewer.sol": "IStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -69,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HashJingSVGStorage.sol": {
-			"keccak256": "0xc94f9dd5544bd23ea91c6e8ad06d139195141dd7055ef5f46ce5927b1c2936d6",
+		"contracts/HashJingViewer.sol": {
+			"keccak256": "0x2d5a90780f77bb2596050a199c2e6e47aa412a7d628280f83a182871b20e37c0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d6c3c74f318d0d7b386c60aee0ce07fa667e59a63351ef3856bfd8922cc0284",
-				"dweb:/ipfs/QmYKPeSfkCv6t7dojE314wpGe3M71VD4P5uDDKdzeTrEbs"
+				"bzz-raw://baaeed8dd3679f2366b4c7773a1d3873e9619a2ae01f75a862ce2d29604814b1",
+				"dweb:/ipfs/QmYnuZjNC4VTEv8QpDze6tFooZj7ddDtBj9hBafvCCRVmc"
 			]
 		},
 		"contracts/SSTORE2.sol": {

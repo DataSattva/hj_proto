@@ -7,44 +7,15 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
 				"name": "WriteError",
 				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "getPointer",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "svgPointer",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
+			"author": "Agustin Aguilar <aa@horizon.io> Readme: https://github.com/0xsequence/sstore2#readme",
 			"kind": "dev",
 			"methods": {},
+			"title": "A key-value storage with auto-generated keys for storing chunks of data with a lower write & read cost.",
 			"version": 1
 		},
 		"userdoc": {
@@ -55,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingSVGStorage.sol": "HashJingSVGStorage"
+			"contracts/SSTORE2.sol": "SSTORE2"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -69,14 +40,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HashJingSVGStorage.sol": {
-			"keccak256": "0xc94f9dd5544bd23ea91c6e8ad06d139195141dd7055ef5f46ce5927b1c2936d6",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://9d6c3c74f318d0d7b386c60aee0ce07fa667e59a63351ef3856bfd8922cc0284",
-				"dweb:/ipfs/QmYKPeSfkCv6t7dojE314wpGe3M71VD4P5uDDKdzeTrEbs"
-			]
-		},
 		"contracts/SSTORE2.sol": {
 			"keccak256": "0x4128c44248387473fa5260a697758b0f5174a0727c2685f45cf81704102a9356",
 			"license": "MIT",
