@@ -2,20 +2,21 @@
 pragma solidity ^0.8.25;
 
 import "./SSTORE2.sol";
-
-interface IStorage {
-    function getPointer() external view returns (address);
-}
+import "./HashJingSVGStorage1.sol";
+import "./HashJingSVGStorage2.sol";
 
 contract HashJingViewer {
-    address public immutable storageContract;
+    address public immutable chunk1;
+    address public immutable chunk2;
 
-    constructor(address _storageContract) {
-        storageContract = _storageContract;
+    constructor(address _chunk1, address _chunk2) {
+        chunk1 = _chunk1;
+        chunk2 = _chunk2;
     }
 
     function getSVG() external view returns (string memory) {
-        address pointer = IStorage(storageContract).getPointer();
-        return string(SSTORE2.read(pointer));
+        bytes memory part1 = SSTORE2.read(chunk1);
+        bytes memory part2 = SSTORE2.read(chunk2);
+        return string(abi.encodePacked(part1, part2));
     }
 }

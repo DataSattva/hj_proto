@@ -6,45 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_chunk1",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_chunk2",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_size",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_start",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_end",
-						"type": "uint256"
-					}
-				],
-				"name": "InvalidCodeAtRange",
+				"inputs": [],
+				"name": "WriteError",
 				"type": "error"
 			},
 			{
 				"inputs": [],
-				"name": "chunk1",
+				"name": "getChunk",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -57,25 +30,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "chunk2",
+				"name": "svgChunk2",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getSVG",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -95,7 +55,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingViewer.sol": "HashJingViewer"
+			"contracts/HashJingSVGStorage2.sol": "HashJingSVGStorage2"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -109,28 +69,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HashJingSVGStorage1.sol": {
-			"keccak256": "0x83069cf0a6bf788df7cd4d6a49911963956c08c1ff3b13ad79bbf57147668b77",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://b713e233b27ee895df64337255dbd63413720e97f8a578af2f8cc310c0e66e26",
-				"dweb:/ipfs/QmVEarFw7H4ezjBb7F7uqaSj1zBDvMtTmMPcpXYFuUuqQy"
-			]
-		},
 		"contracts/HashJingSVGStorage2.sol": {
 			"keccak256": "0x0c4dce90bf5a6dbc0f1b5ea9661d608155b78bad8e4cb797f0ae0c09c3512052",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://ffee1f3aec2ecbf90f1614dd3737c77030a0a2ccf3cb5bff57b8ef95bb972fc7",
 				"dweb:/ipfs/Qmakz1RmsjuNLQGkrooCMReTi6ebPSpAVCysY3zV8xpzzg"
-			]
-		},
-		"contracts/HashJingViewer.sol": {
-			"keccak256": "0xadf519061c59a899457daa4781109f0f5000f3a3a59d382f10e3f2f57a3767e2",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://5b7eae45e3458e1dcc95738088f25005109cff02c0f056715c52482b02ccb5b0",
-				"dweb:/ipfs/QmQwzH43jbJ6NhsiMVqEzK2EinfdAkq59yo1yDQnorA5GB"
 			]
 		},
 		"contracts/SSTORE2.sol": {
