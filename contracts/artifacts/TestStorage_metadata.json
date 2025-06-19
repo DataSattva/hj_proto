@@ -17,7 +17,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getChunk",
+				"name": "getPointer",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -30,7 +30,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "svgChunk1",
+				"name": "ptr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -55,7 +55,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingSVGStorage1.sol": "HashJingSVGStorage1"
+			"contracts/HashJingSVGStorage1_.sol": "TestStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -69,12 +69,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HashJingSVGStorage1.sol": {
-			"keccak256": "0x1d5300f39cbbec491675b939aa7f7582eb4ccaed9dd7b84cbc011562bd8abccc",
+		"contracts/HashJingSVGStorage1_.sol": {
+			"keccak256": "0x1e7e1570042c7048e26cbcfe168c30db289dbd689d67b3cdad91f5fb5ad5b290",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://50fadb35888619da7c5fb5f80981f7d3cd54375ae11a14f37dd7c0c368cd45e2",
-				"dweb:/ipfs/QmVH4qjG3dhGMe2zom4pm9ohSnhRQ1KRYxTkmCZQzyrnPg"
+				"bzz-raw://92947656b8902feb034237bfba23fe45449fb0217a5596057156d7b87e9864e1",
+				"dweb:/ipfs/QmZiooGhF2pffD7SgLQbKLT9S2roCc8XjEhMm1VcFyLAwC"
 			]
 		},
 		"contracts/SSTORE2.sol": {
