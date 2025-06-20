@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingViewer.sol": "TwoSectorRenderer"
+			"contracts/HashJingViewer.sol": "MultiSectorRenderer"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -66,11 +66,11 @@
 			]
 		},
 		"contracts/HashJingViewer.sol": {
-			"keccak256": "0xcd82769bbb14719bf9ec1381fa8d47d6b411394ffcb5aa6ad55bd4c2dc26c73c",
+			"keccak256": "0x2b076a2d55e136cd3d3b40829ebcf7aca22860b72c4583ef6bff9869eee06df6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca26c8286701fe64a1d60797f08a9cb5331e14c15b31c94b1c6a33cb9249e701",
-				"dweb:/ipfs/QmXJ5h7wszmFKXyM5DghUr6GEv5x2KE5qecv2byiGeRmXy"
+				"bzz-raw://de3b7c9bacaa4d59ff72984dbc256cf1b94ae4f1ff97cb6435aa1b01a88293a1",
+				"dweb:/ipfs/Qmf3BPQ2v4cC4zCMzmeWQ1F1DwwSsbnGygrQbuez3RTLxV"
 			]
 		},
 		"contracts/SSTORE2.sol": {

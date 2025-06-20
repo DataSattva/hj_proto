@@ -28,6 +28,30 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "from",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "to",
+						"type": "uint256"
+					}
+				],
+				"name": "getSlice",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -43,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingViewer.sol": "TwoSectorRenderer"
+			"contracts/HashJingViewer.sol": "MultiSectorRenderer64"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -66,11 +90,11 @@
 			]
 		},
 		"contracts/HashJingViewer.sol": {
-			"keccak256": "0xcd82769bbb14719bf9ec1381fa8d47d6b411394ffcb5aa6ad55bd4c2dc26c73c",
+			"keccak256": "0xd07be62381601df4c949c65fba1e6396ffe8565221fd89836ed1833e00c81a0e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca26c8286701fe64a1d60797f08a9cb5331e14c15b31c94b1c6a33cb9249e701",
-				"dweb:/ipfs/QmXJ5h7wszmFKXyM5DghUr6GEv5x2KE5qecv2byiGeRmXy"
+				"bzz-raw://c3d00fe096016f8292fdf77b2c6b6df44090c031cb51df6f5eaffd2d0f47ed36",
+				"dweb:/ipfs/QmREk5qmrkW5hLoT9gvB2UTAgEXv5h5bEGSLeCc1ZvgWon"
 			]
 		},
 		"contracts/SSTORE2.sol": {
