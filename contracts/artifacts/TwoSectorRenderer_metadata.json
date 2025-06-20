@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sectorPtr",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -33,37 +39,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "WriteError",
-				"type": "error"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "i",
-						"type": "uint256"
-					}
-				],
-				"name": "prefix",
+				"name": "getSVG",
 				"outputs": [
 					{
-						"internalType": "bytes",
+						"internalType": "string",
 						"name": "",
-						"type": "bytes"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "prefixPtr",
+				"inputs": [],
+				"name": "sectorPtr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -82,13 +71,17 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"getSVG()": {
+					"notice": "Возвращает SVG-фрагмент из **двух** секторов 0101 (0b0101) ↔ c1=#fff, c2=#000, c3=#fff, c4=#000 1001 (0b1001) ↔ c1=#000, c2=#fff, c3=#fff, c4=#000"
+				}
+			},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HashJingSVGStorage1.sol": "HashJingSVGStorage1"
+			"contracts/HashJingViewer.sol": "TwoSectorRenderer"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +95,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HashJingSVGStorage1.sol": {
-			"keccak256": "0x02b74aab2d5028434f6d0452a2fb351e1fd29174c0880cc68970790326f17ea0",
+		"contracts/HashJingViewer.sol": {
+			"keccak256": "0xaf8af65abad6647c52c388c7ec153b7620f1e5163dde9b90bcd11c4a8b9151b3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://06bb0b2dcbbc7321bc6a082fc64f4def6b665a93dbc5c8592d1cd5d9951bc12b",
-				"dweb:/ipfs/QmQQUkymynR9cUbMbFPL9HXWMzQ2ANDFjKmaUyKLDyv34v"
+				"bzz-raw://5b4e8987a2cc781506957484a8dc4d945b6e7c8c09b83874e0fb05920e468f73",
+				"dweb:/ipfs/QmPdyQEWMNxj4ua3DBDYqxai8NTdwdXsgtftC14iANUnKh"
 			]
 		},
 		"contracts/SSTORE2.sol": {

@@ -2,61 +2,35 @@
 pragma solidity ^0.8.25;
 
 import "./SSTORE2.sol";
+import "./HashJingSVGStorage1.sol";
 
-contract HashJingViewer {
-    address public immutable chunk1;
+contract SingleSectorRenderer {
+    HashJingSVGStorage1 immutable store;
 
-    constructor(address _chunk1) {
-        chunk1 = _chunk1;
+    bytes constant TAIL = '"/>';              // закрываем path
+
+    constructor(address storageAddr) {
+        store = HashJingSVGStorage1(storageAddr);
     }
 
+    /// @dev возвращает SVG-фрагмент одного сектора:
+    ///      c1 = black, c2 = white, c3 = black, c4 = white
     function getSVG() external view returns (string memory) {
-        string memory raw = string(SSTORE2.read(chunk1));
+        uint8 bits = 0x0A;                    // 1010 (c1-1, c2-0, c3-1, c4-0)
 
-        raw = substitute(raw, "c_1", "white");
-        raw = substitute(raw, "c_2", "black");
-        raw = substitute(raw, "c_3", "white");
-        raw = substitute(raw, "c_4", "black");
-
-        return raw;
+        bytes memory svg;
+        unchecked {
+            for (uint8 ring; ring < 4; ++ring) {
+                bytes  memory pref = store.prefix(ring);              // префикс path
+                string memory col  = _col((bits >> (3 - ring)) & 1);  // цвет
+                svg = bytes.concat(svg, pref, bytes(col), TAIL);      // prefix+color+"/>"
+            }
+        }
+        return string(svg);
     }
 
-    function substitute(string memory input, string memory key, string memory value) internal pure returns (string memory) {
-        bytes memory inputBytes = bytes(input);
-        bytes memory keyBytes = bytes(key);
-        bytes memory valueBytes = bytes(value);
-
-        bytes memory result = new bytes(inputBytes.length + 64);
-        uint256 resultIndex = 0;
-
-        for (uint256 i = 0; i < inputBytes.length; ) {
-            bool matchFound = true;
-            if (i + keyBytes.length > inputBytes.length) {
-                matchFound = false;
-            } else {
-                for (uint256 j = 0; j < keyBytes.length; j++) {
-                    if (inputBytes[i + j] != keyBytes[j]) {
-                        matchFound = false;
-                        break;
-                    }
-                }
-            }
-
-            if (matchFound) {
-                for (uint256 j = 0; j < valueBytes.length; j++) {
-                    result[resultIndex++] = valueBytes[j];
-                }
-                i += keyBytes.length;
-            } else {
-                result[resultIndex++] = inputBytes[i++];
-            }
-        }
-
-        bytes memory finalResult = new bytes(resultIndex);
-        for (uint256 k = 0; k < resultIndex; k++) {
-            finalResult[k] = result[k];
-        }
-
-        return string(finalResult);
+    /*──── helper: 0 → white, 1 → black ───*/
+    function _col(uint8 bit) private pure returns (string memory) {
+        return bit == 0 ? "#ffffff" : "#000000";
     }
 }
