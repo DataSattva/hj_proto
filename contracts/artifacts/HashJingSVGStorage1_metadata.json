@@ -37,6 +37,32 @@
 				"type": "error"
 			},
 			{
+				"inputs": [],
+				"name": "head",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "headPtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -64,6 +90,70 @@
 					}
 				],
 				"name": "prefixPtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tail",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tailPtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "textPrefix",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "textPrefixPtr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -103,11 +193,11 @@
 	},
 	"sources": {
 		"contracts/HashJingSVGStorage1.sol": {
-			"keccak256": "0x02b74aab2d5028434f6d0452a2fb351e1fd29174c0880cc68970790326f17ea0",
+			"keccak256": "0x6024a375aecbf7be25054ac3e3310dc630adbd61b32e00a376a82220567fe1c5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://06bb0b2dcbbc7321bc6a082fc64f4def6b665a93dbc5c8592d1cd5d9951bc12b",
-				"dweb:/ipfs/QmQQUkymynR9cUbMbFPL9HXWMzQ2ANDFjKmaUyKLDyv34v"
+				"bzz-raw://3b61aa901f16e3ddcf82d1f70e93f71ff35ab4ebc8c5b4fc78951d93ecb33e1c",
+				"dweb:/ipfs/QmY8MqCgnkS4gSbCWUgpRAQywkg2yX2ZncM9voJ7DHWDZv"
 			]
 		},
 		"contracts/SSTORE2.sol": {
